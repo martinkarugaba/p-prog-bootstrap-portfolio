@@ -79,7 +79,7 @@
     <!--! END NAVBAR -->
 
     <!--! PROJECTS SECTION -->
-    <section class="project-section" id="portfolio">
+    <section class="project-section mx-auto py-5" id="portfolio">
       <div class="card d-flex flex-row" style="width: 80vw">
         <img
           src="./img/projects/desktop-project-1.jpg"
@@ -110,12 +110,77 @@
             </li>
           </ul>
 
-          <a
+          <!--<button
             href="#"
             class="card-link btn btn-outline-primary"
             role="button"
-            >See Project</a
           >
+            See Project
+          </button>-->
+
+          <!-- Button trigger modal -->
+          <!--! project one modal -->
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            See project
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Tonic
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img class="w-100"
+                    src="./img/projects/desktop-project-1.jpg"
+                    alt="project one"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Est quibusdam voluptas quas,
+                    perferendis unde pariatur dicta qui officia
+                    expedita quisquam perspiciatis, velit minus
+                    cupiditate obcaecati hic debitis quo voluptatibus
+                    aut veniam numquam maiores.
+                  </p>
+
+                  <div class="d-flex justify-content-end">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary px-4"
+                      data-bs-dismiss="modal"
+                    >
+                      See project
+                    </button>
+                    <button type="button" class="btn btn-outline-primary px-4 ms-2">
+                      See source
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! end project one modal -->
         </div>
       </div>
     </section>
