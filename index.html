@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>bootstrap portfolio</title>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target=".navbar"
+    data-bs-offset="50"
+  >
+    <!--! NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Logo</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--<div
+          class="collapse navbar-collapse d-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-primary">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Porfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>-->
+
+        <ul class="nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="#portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--! END NAVBAR -->
+
+    <!--! PROJECTS SECTION -->
+    <section class="project-section mx-auto py-5" id="portfolio">
+      <div class="card d-flex flex-row" style="width: 80vw">
+        <img
+          src="./img/projects/desktop-project-1.jpg"
+          class="card-img-top"
+          alt="project one"
+        />
+        <div class="card-body">
+          <h5 class="card-title fs-1 fw-normal">Tonic</h5>
+          <p class="card-subtitle mb-2 text-muted">
+            <span>Canopy</span>
+            <span></span>
+            <span>Backend Dev</span>
+            <span></span>
+            <span>2015</span>
+          </p>
+          <p class="card-text">
+            A daily selection of privately personalized reads; no
+            accounts or sign-ups required.
+          </p>
+
+          <ul class="d-flex p-0">
+            <li class="badge bg-light text-dark fw-normal">html</li>
+            <li class="badge bg-light text-dark fw-normal mx-3">
+              css
+            </li>
+            <li class="badge bg-light text-dark fw-normal">
+              javascript
+            </li>
+          </ul>
+
+          <!--<button
+            href="#"
+            class="card-link btn btn-outline-primary"
+            role="button"
+          >
+            See Project
+          </button>-->
+
+          <!-- Button trigger modal -->
+          <!--! project one modal -->
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            See project
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog w-100">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Tonic
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img class="w-100"
+                    src="./img/projects/desktop-project-1.jpg"
+                    alt="project one"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Est quibusdam voluptas quas,
+                    perferendis unde pariatur dicta qui officia
+                    expedita quisquam perspiciatis, velit minus
+                    cupiditate obcaecati hic debitis quo voluptatibus
+                    aut veniam numquam maiores.
+                  </p>
+
+                  <div class="d-flex justify-content-end">
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary px-4"
+                      data-bs-dismiss="modal"
+                    >
+                      See project
+                    </button>
+                    <button type="button" class="btn btn-outline-primary px-4 ms-2">
+                      See source
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--! end project one modal -->
+        </div>
+      </div>
+    </section>
+    <!--! END PROJECTS SECTION -->
+    <!-- <section class="about-section" id="item-3">
+      <article>
+        <h2>
+          About <br />
+          Myself
+        </h2>
+        <p>
+          Hello I’m a software developer! I can help you build a
+          product , feature or website Look through some of my work
+          and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+      </article>
+      <div class="contact-me">
+        <h3>Let's connect</h3>
+        <ul class="socials">
+          <li>
+            <a href="https://twitter.com/cindykandie">
+              <img src="assets/twitter.svg" alt="twitter icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com/cindykandie">
+              <img src="assets/linkedin.png" alt="linkedin icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://medium.com/cindykandie">
+              <img src="assets/medium.svg" alt="medium icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/cindykandie">
+              <img src="assets/github.svg" alt="github icon" />
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="assets/chill.svg" alt="angelist icon" />
+            </a>
+          </li>
+        </ul>
+        <a class="btn btn-outline-primary" href="#">
+          Get My resume
+        </a>
+      </div>
+    </section>
+    <section id="skills-section" id="skills">
+      <ul class="mainskill-ul">
+        <li>
+          Languages
+          <img
+            class="arrow"
+            src="assets/down-arrow.png"
+            alt="drop down arrow"
+          />
+          <ul class="sublist-ul">
+            <li>
+              <img
+                src="assets/jslogo.png"
+                alt="javascript logo"
+              />Javascript
+            </li>
+            <li><img src="assets/html.png" alt="html logo" />HTML</li>
+            <li><img src="assets/css.png" alt="css logo" />CSS</li>
+          </ul>
+        </li>
+
+        <li>
+          Frameworks
+          <img
+            class="arrow"
+            src="assets/side.png"
+            alt="drop down arrow"
+          />
+        </li>
+        <li>
+          Skills
+          <img
+            class="arrow"
+            src="assets/side.png"
+            alt="drop down arrow"
+          />
+        </li>
+      </ul>
+    </section> -->
+    <footer class="bg-primary py-5" id="contact" >
+      <div class="w-25 mx-auto">
+      <article>
+        <h2 id="contact-me" class="text-light fw-bold text-center">Contact me</h2>
+        <p class="text-light fw-normal text-center">
+          If you have an application you are interested in developing,
+          a feature that you need built or a project that needs
+          coding. I’d love to help with it.
+        </p>
+      </article>
+      <form class= "d-flex flex-column justify-content-center">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Yeremias" aria-placeholder="Yeremias">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" aria-placeholder="abc@gmail.com" placeholder="abc@gmail.com" >
+        </div>
+        <div class="mb-3">
+          <textarea rows="8" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <button type="submit" class="bg-light btn btn-outline-primary text-primary w-50 mx-auto rounded-3">Get In Touch</button>
+      </form>
+    </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
