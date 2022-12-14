@@ -185,7 +185,7 @@
       </div>
     </section>
     <!--! END PROJECTS SECTION -->
-    <section class="about-section" id="item-3">
+    <!-- <section class="about-section" id="item-3">
       <article>
         <h2>
           About <br />
@@ -274,53 +274,30 @@
           />
         </li>
       </ul>
-    </section>
-    <footer class="contact-form" id="contact">
+    </section> -->
+    <footer class="bg-primary py-5" id="contact" >
+      <div class="w-25 mx-auto">
       <article>
-        <h2 id="contact-me">Contact me</h2>
-        <p>
+        <h2 id="contact-me" class="text-light fw-bold text-center">Contact me</h2>
+        <p class="text-light fw-normal text-center">
           If you have an application you are interested in developing,
           a feature that you need built or a project that needs
           coding. I’d love to help with it.
         </p>
       </article>
-      <form action="https://formspree.io/f/mknedray" method="POST">
-        <ul>
-          <li>
-            <input
-              type="text"
-              name="name"
-              placeholder="Yeremias"
-              required
-              maxlength="30"
-            />
-          </li>
-          <li>
-            <input
-              type="email"
-              name="email"
-              placeholder="natajayanj14@gmail.com"
-              required="required"
-              pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
-              maxlength="30"
-            />
-          </li>
-          <li>
-            <textarea
-              name="client-msg"
-              id="client-msg"
-              cols="30"
-              rows="12"
-              placeholder="Write your message here..."
-              maxlength="500"
-              required
-            ></textarea>
-          </li>
-        </ul>
-        <button class="btn btn-outline-primary" type="submit">
-          Get In Touch
-        </button>
+      <form class= "d-flex flex-column justify-content-center">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Yeremias" aria-placeholder="Yeremias">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" aria-placeholder="abc@gmail.com" placeholder="abc@gmail.com" >
+        </div>
+        <div class="mb-3">
+          <textarea rows="8" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <button type="submit" class="bg-light btn btn-outline-primary text-primary w-50 mx-auto rounded-3">Get In Touch</button>
       </form>
+    </div>
     </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
